@@ -1,0 +1,153 @@
+@keyframes searchAnimation {
+  0% {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255);
+    width: 500px;
+  }
+}
+
+.auth-card {
+  background-color: #282c34;
+  border-radius: 2rem;
+}
+
+.searchfield {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  border-width: 0rem;
+  color: white;
+  padding-left: 35px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  transition: width 1s, border-radius 1.5s, background-color 1s;
+  width: 200px;
+  outline: none;
+}
+
+.searchfield:hover {
+  width: 250px;
+}
+
+.searchfield:focus {
+  border-width: 0rem;
+  border-color: black;
+  width: 550px;
+  color: black;
+  border-radius: 1rem;
+  /* animation-name: searchAnimation; */
+  animation-duration: 2s;
+  padding-left: 35px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1rem;
+  background-color: white;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 5px;
+  color: white;
+  transition: color 1s;
+}
+
+.search-div {
+  background-color: #293b5f;
+  display: block;
+  margin: auto;
+  min-height: 100vh;
+  padding-top: 1.5rem;
+}
+
+.card-div {
+  color: black;
+}
+
+.image {
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.notebook-img {
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  /* bottom: 0; */
+  /* clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 61%); */
+  transform: rotate(-28deg);
+  /* position: absolute; */
+  /* overflow: hidden; */
+}
+
+.auth-root-div {
+  overflow: hidden;
+  min-height: 100vh;
+  /* position: relative; */
+}
+
+.btn-4:hover {
+  padding-left: 60px;
+  transition: padding 1s;
+}
+
+.table {
+  position: absolute;
+  background-color: burlywood;
+  min-width: 200px;
+  z-index: 0;
+  min-height: 100vh;
+  clip-path: polygon(0 42%, 90% 34%, 93% 63%, 97% 100%, 25% 100%, 0 100%);
+  border-top-right-radius: 5px;
+}
+
+.stethoscope {
+  /* margin-top: 24%; */
+  /* position: relative; */
+  width: 280px;
+}
+
+.nav-heading {
+  padding-left: 3%;
+  padding-top: 2%;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  display: flex;
+}
+
+.disp-name {
+  margin-left: auto;
+}
+
+.card-width {
+  max-width: 30px;
+}
+
+.displayName {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding-right: 15px;
+  padding-top: 6px;
+  font-size: 1.5rem;
+}
+
+.logout-ico {
+  color: white;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.logout-ico:hover {
+  text-shadow: 100px;
+  cursor: pointer;
+}

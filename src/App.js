@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState, useEffect} from 'react';
+import Home from './components/Home';
+import Search from './components/Search'
+import Authentication from './components/Authentication';
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 function App() {
+  
+  const [loginState, setLoginState] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        {/* {localStorage.clear()} */}
+        { localStorage.getItem('status') ? <Search setLoginState={setLoginState} user={JSON.parse(localStorage.getItem('user'))} />: <Authentication setLoginState={setLoginState} />}
     </div>
   );
 }
